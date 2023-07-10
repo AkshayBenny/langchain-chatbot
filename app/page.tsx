@@ -56,7 +56,7 @@ export default function Home() {
 	}
 
 	return (
-		<main className='max-w-6xl mx-auto  min-h-screen w-screen flex flex-col items-center justify-start px-6'>
+		<main className='max-w-6xl mx-auto  min-h-screen overflow-x-clip max-w-screen flex flex-col items-center justify-start p-6'>
 			<h1 className='text-white text-4xl font-bold text-center py-12'>
 				Langchain Chatbot
 			</h1>
