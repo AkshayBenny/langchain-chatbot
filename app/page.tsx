@@ -70,18 +70,18 @@ export default function Home() {
 					placeholder='What do you wish to know about?'
 					className='px-4 py-2 border-white rounded-md placeholder:text-blue-600 w-full'
 				/>
-				<div className='flex items-center justify-end gap-4 w-full'>
+				<div className='flex flex-col lg:flex-row items-center justify-end gap-2 w-full mt-5'>
 					<button
 						type='button'
 						disabled={loading}
 						onClick={handleClearChat}
-						className=' border border-white text-white px-12 py-3 text-lg rounded-md mt-5'>
+						className='w-full border border-white text-white px-12 py-3 text-lg rounded-md lg:mt-5'>
 						{loading ? spinner : 'Clear chat'}
 					</button>
 					<button
 						type='submit'
 						disabled={loading}
-						className='border border-white bg-white text-blue-600 px-12 py-3 text-lg rounded-md mt-5'>
+						className='w-full border border-white bg-white text-blue-600 px-12 py-3 text-lg rounded-md lg:mt-5'>
 						{loading ? spinner : 'Chat now'}
 					</button>
 				</div>
